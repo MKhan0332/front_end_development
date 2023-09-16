@@ -1,0 +1,235 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+body{
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* navigation Bar: logo and image */
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    height: 58px;
+    margin: 2px 10px;
+}
+/* navigation Bar: ul element */
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#navbar ul li{
+    list-style-type: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/backgrounds/bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services section */
+.services-container{
+    margin-top: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#services{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#services .frontend_box{
+    margin: 25px;
+    width: 25%;
+    height: 250px;
+    display: block;
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px white;
+}
+#services .backend_box{
+    margin: 25px;
+    width: 25%;
+    height: 250px;
+    display: block;
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px white;
+}
+#services .fullstack_box{
+    margin: 25px;
+    width: 25%;
+    height: 250px;
+    display: block;
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px white;
+}
+#services .fullstack_box:hover, .backend_box:hover, .frontend_box:hover{
+    background-color: rgb(175, 173, 173);
+    color: black;
+}
+.frontend_box img{
+    width: 100%;
+    height: 200px;
+}
+.backend_box img{
+    width: 100%;
+    height: 200px;
+}
+.fullstack_box img{
+    width: 100%;
+    height: 200px;
+}
+#client-section{
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background:url('../images/backgrounds/bg2.jpg');
+    z-index: -1;
+    opacity: 0.5;
+}
+.clients {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    margin: 10px;
+    padding: 10px;
+}
+.clients img{
+    width: 80px;
+    height: 80px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+    padding-top: 15px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../images/backgrounds/contact.jpg');
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box button{
+        width: 100%;
+        padding: 0.5rem;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: #212533;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #475671;
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.center{
+    text-align: center;
+}
+.white{
+    color: white;
+}
